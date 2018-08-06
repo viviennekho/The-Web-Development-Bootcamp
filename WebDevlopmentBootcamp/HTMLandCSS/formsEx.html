@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Register</h1>
+
+	<form action="http://www.onautosales.com">
+		<label for="firstname">First Name:</label>
+		<input name="name" type="name" placeholder="John" required>
+		<label for="lastname">Last Name:</label>
+		<input name="lastname" type="name" placeholder="Smith" required>
+<!--
+		<br>
+		<label>
+		Male
+			<input type="radio">
+		</label>
+		Female
+			<input type="radio">
+		<label>
+		Other
+			<input type="radio">
+		</label>
+		-->
+		<div>
+		<label for="male">Male</label>
+		<input id="male" name="gender" type="radio" value="male">
+		<label for="female">Female</label>
+		<input id="female" name="gender" type="radio" value="female">
+		<label for="other">Other</label>
+		<input id="other" name="gender" type="radio" value="other">
+		</div>
+		<label for="email">Email:</label>
+		<input name="email" type="email" placeholder="abc@email.com"
+		required>
+		<!--
+		<label for="birthday">Birthday:</label>
+		<select id="birthday-select-month">
+			<option value="month">Month</option>
+			<option value="January">January</option>
+			<option value="February">Feburary</option>
+			<option value="March">March</option>
+		</select>
+
+		<select id="birthday-select-day">
+			<option value="day">Day</option>
+			<option value="one">1</option>
+			<option value="two">2</option>
+		</select>
+
+		<select id="birthday-select-year">
+			<option value="year">Year</option>
+			<option value="twenty-eighteen">2018</option>
+			<option value="twenty-seventeen">2017</option>
+		</select>
+		-->
+		<div>
+		<label>
+		Birthday:
+		<select>
+			<option>Jan</option>
+			<option>Feb</option>
+		</select>
+		<select>
+			<option>10</option>
+			<option>11</option>
+		</select>
+		<select>
+			<option>1999
+		<label for="terms">I agree to the terms and conitions</label>
+		<input type="checkbox">
+		<br>
+		<input type="submit">
+	</form>
+</body>
+
+</html>

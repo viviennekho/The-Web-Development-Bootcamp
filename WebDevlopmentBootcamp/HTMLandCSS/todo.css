@@ -1,0 +1,19 @@
+body {
+	background: orange;
+}
+
+.completed {
+	text-decoration: line-through;
+}
+
+div{
+	background: purple;
+}
+
+p {
+	color: yellow;
+}
+
+#special {
+	color: yellow;
+}

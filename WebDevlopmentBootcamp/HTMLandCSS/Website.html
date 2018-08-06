@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Monochromatic Styled</title>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Fashion, Lifestyle, Blogger">
+		<meta name="descriptiion" content="Lifestyle blogger">
+		<meta name="author" conetent="Vivienne Ho">
+<!--Viewport allows to update web page depending on layout, lets use -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+<!--Using CSS-->
+	<style>
+		#myHeader {
+			background-color:white;
+			color:black;
+			padding:40px;
+			text-align:center;
+		}	
+
+		header, footer {
+			padding: 1em;
+			color: white;
+			background-color: black; 
+			clear: left;
+			text-align: center;
+		}
+
+		nav {
+			float: right;
+			padding: 1em;
+		}
+
+		@media only screen and (max-width:800px) {
+			/* For tablets: */
+			.main {
+				width: 80%;
+				padding: 0;
+			}
+			.right {
+				width: 100%;
+			}
+		}
+	</style>
+
+		<h1 id="myHeader">Monochromatic Styled</h1>
+
+<!--So for the purpose of this is to be able to create a blogger template
+for my website and I want to first keep the header attatched throughout the
+	blog and transparent and also create blog posts that has dates, titles, pictures and
+	body of the post -->
+	<body>
+		<div class="container">
+		<center><p style="font-size:25px;">By Vivienne Ho</p></center>
+		<center><img src="https://d360.dondup.com/wp-content/uploads/2017/09/most-followed-fashion-bloggers-of-2017.jpg"
+alt="Fashion Bloggers" width="1000" height="500"></center>
+		<a href="https://www.instagram.com/viviennekho/?hl=en">Instagram</a>
+	<br
+<hr>
+	<br>
+	<!--Creating blog post, default is set to get and it will be visible in
+	the page address field but use post when the form contains senstivite or
+	personal information, it won't display the submitted form data in the
+	page address-->
+	<form action="/action_page.php" target="_blank" method="POST">
+		<fieldset>
+			<legend>Blog Post</legend>
+			<textarea name="message" rows="10" cols="100"></textarea>
+			<input type="submit"
+				value="Submit">
+		</fieldset>
+	</form>
+		<p title="First blog post">Welcome to my blog, I'm excited to share my ideas with you guys!</p>
+	<br>
+
+<!--Add to email list <form> element is used to collect user input-->
+	<form action="/action_page.php"> <!--Action attribute defines the action
+	to be performed when the form is submitted-->
+		First name:<br>
+			<input type="text"
+		name="firstname" value="">
+			<br>
+		Last name:<br>
+			<input type="text"
+		name="lastname" value="">
+			<br><br>
+			<input type="submit"
+		value="Submit">
+	</form>
+
+<!--List-->
+<ol>
+	<li>Build a website</li>
+	<li>Make content</li>
+	<li>Be consistent</li>
+</ol>
+
+<pre>
+This spring season is great to pair with a blah blah
+</pre>
+
+	<!--Paragraphs with quotes-->
+		<p>Our goals are: <q>We need to find esstentials so it's easier to match
+with anything you pair with</q></p>
+
+	<!-- rgb(red, green, blue, transparency) or #rrggbb alpha means transparency-->
+		<h1 style="background-color:rgba(255, 99, 71, 0.3);">...</h1>
+
+	<!--HSL value hsl(hue, saturation, lightness)-->
+		<h1 style="background-color:hsl(300, 76%, 72%);">Welcome</h1>
+
+	<!--Opening links on the same page-->
+		<a href="https://www.facebook.com/" target="_self">Facebook</a>
+
+	<footer>Copyright Vivienne Ho</footer>
+	</body>
+</html>
